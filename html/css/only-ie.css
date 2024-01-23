@@ -1,0 +1,35 @@
+@font-face{
+   font-family:'Noto Sans kr';
+   font-style:normal;
+   font-weight:300;
+   src:url('/font/notokr-regular.eot');
+   src:url('/font/notokr-regular.eot?#iefix') format('embedded-opentype');}
+
+
+#header .head .container .depth_01 > li .ab_box_01 .left span{
+  font-size: 12px;
+}
+#header .head .all_menu .menubg .am_right .amr_d1{left: 50%;}
+
+#normal{
+  height: 32px;
+}
+#mini_1{
+  height: 32px;
+}
+#mini_2{
+  height: 32px;
+}
+#index_pg .main_1 .banner .banner_t{
+  width: 426px !important;
+  margin: 350px 0 0 207px !important;}
+
+#review .review_detail .rbbox2 .name{width: 173px;}
+#detail .bottom_box .detail_box .qbox3 .secreat .pw_btn{line-height: 15px !important;}
+.lr_name{font-size: 12px;}
+.lq_name{font-size: 12px;}
+.lr_list_02 >a{
+    font-size: 11px;
+  }
+#qna_pw .pw_container .pw_box{font-size: 12px;}
+#qna_pw .pw_container .ok_btn{line-height: 36px;}

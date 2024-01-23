@@ -1,0 +1,56 @@
+<?php include_once('../layout/header.html'); ?>
+<section id="map">
+  <div class="map_container">
+    <div class="map_bg">
+      <h1>Direction</h1>
+      <ul class="section_menu">
+        <li>
+          <span class="xi-home-o"></span>
+          <a href="/layout/bluepants.html">
+            HOME
+          </a>
+        </li>
+        <li><a href="#none">브랜드</a></li>
+        <li><a href="/layout/map.html">
+          오시는길
+        </a></li>
+      </ul>
+      <div class="wave">
+        <img src="/img/wave4.png">
+      </div>
+    </div>
+    <div class="map_ct">
+      <div class="container">
+        <h3>오시는 길</h3>
+        <div id="map_box">
+          <iframe src="https://maps.google.com/maps?q=%EC%84%9C%EC%9A%B8%20%EA%B0%95%EB%82%A8%20%EC%98%81%EB%8F%99%EB%8C%80%EB%A1%9C%20123&t=&z=15&ie=UTF8&iwloc=&output=embed" width="1200px" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+          </iframe>
+        </div>
+        <ul class="map_list">
+          <li>
+            <span class="xi-maker-drop map_imoge"></span>
+            <span class="map_t_01">주소</span>
+            <span class="map_t_02">서울특별시 강남구 영동대로 123, 높은빌딩</span>
+          </li>
+          <li>
+            <div class="map_tbox">
+              <span class="xi-call map_imoge"></span>
+              <span class="map_t_01">TEL</span>
+              <a href="tel:010-5317-0059" class="map_t_02">010-5317-0059</a>
+            </div>
+          </li>
+          <li>
+            <div class="map_tbox">
+              <span class="xi-fax map_imoge"></span>
+              <span class="map_t_01">FAX</span>
+              <a class="map_t_02">02-1004-7777 </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<?php include_once('../layout/footer.html'); ?>
