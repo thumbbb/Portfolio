@@ -83,7 +83,7 @@ input[type="checkbox"] {
     transition-duration: 0.1s;
     position: relative;
     cursor: pointer;
-    background: no-repeat center url("@images/common/ico-check.png");
+    background: no-repeat center url("");
     background-color: white;
     background-size: contain;
     @include tablet {
@@ -92,7 +92,7 @@ input[type="checkbox"] {
     }
     &:checked {
         border: 0.1rem solid #767676;
-        background: no-repeat center url("@images/common/ico-checked.png");
+        //background: no-repeat center url("@images/common/ico-checked.png");
         background-size: contain;
     }
 }

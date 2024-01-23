@@ -11,10 +11,8 @@
   "scripts": {
     "build": "nuxt build",
     "build-dev": "nuxt build --dotenv .env.dev",
-    "build-alpha": "nuxt build --dotenv .env.alpha",
     "build-live": "nuxt build --dotenv .env",
     "dev": "nuxt dev --dotenv .env.dev",
-    "alpha": "nuxt dev --dotenv .env.alpha",
     "live": "nuxt dev --dotenv .env.live",
     "generate": "nuxt generate",
     "preview": "nuxt preview",

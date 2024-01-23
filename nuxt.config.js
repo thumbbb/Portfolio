@@ -1,6 +1,10 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 import eslintPlugin from "vite-plugin-eslint"
 export default defineNuxtConfig({
+    target: 'static',
+    router: {
+        base: '/thumb/'
+    },
     app: {
         cdnURL: process.env.CDN_URL
     },
