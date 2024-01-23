@@ -1,8 +1,8 @@
 <template>
     <nav id="snb" class="snb">
         <div class="mob-snb-header">
-            <a href="#" class="snb-logo"><img src="@images/common/ico-logo.png" alt="Snb 로고" /></a>
-            <button class="snb-close" @click="modalStore.layerToggle(null)"><img src="@images/common/ico-layer-close.png" alt="Snb 닫기" /></button>
+            <a href="#" class="snb-logo"><img src="" alt="Snb 로고" /></a>
+            <button class="snb-close" @click="modalStore.layerToggle(null)"><img src="" alt="Snb 닫기" /></button>
         </div>
         <ul class="snb-list">
             <li data-menuanchor="pre-register" class="snb-menu">
@@ -15,21 +15,6 @@
                 <a href="#" :class="{ __active: indexStore.currentPageIndex === 2 }" @click.prevent="[indexStore.goToPage(2), mobileSnbClose()]">화면3</a>
             </li>
         </ul>
-        <div class="mob-snb-footer">
-            <ul class="sns-list">
-                <li>
-                    <a href="https://www.youtube.com/channel/UChDYjUDqiaF4qv8FqmKAXqg" @click="mobileSnbClose()" target="_blank"
-                        ><img src="@images/common/ico-youtube.png" alt="유튜브 바로가기"
-                    /></a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/ShadowMoG_KR" @click="mobileSnbClose()" target="_blank"><img src="@images/common/ico-twitter.png" alt="트위터 바로가기" /></a>
-                </li>
-                <li>
-                    <a href="https://shadow-garden.webzen.co.kr/" @click="mobileSnbClose()" target="_blank"><img src="@images/common/ico-home.png" alt="커뮤니티 바로가기" /></a>
-                </li>
-            </ul>
-        </div>
     </nav>
 </template>
 
@@ -197,7 +182,7 @@ export default {
                     width: 1rem;
                     height: 1rem;
                     top: 1.7rem;
-                    background-image: url("@images/common/ico-snb.png");
+                    //background-image: url("@images/common/ico-snb.png");
                 }
                 &:after {
                     display: none;
@@ -205,7 +190,7 @@ export default {
                     height: 2.5rem;
                     top: 1rem;
                     right: calc(100% - 0.25rem);
-                    background-image: url("@images/common/ico-snb-active.png");
+                    //background-image: url("@images/common/ico-snb-active.png");
                 }
                 &.__active {
                     text-shadow: 0.3rem 0.2rem 1rem #ff1100;
@@ -262,7 +247,7 @@ export default {
                 width: 1.5rem;
                 height: 1.5rem;
                 background: {
-                    image: url("@images/common/ico-btn-arrow-w.png");
+                    //image: url("@images/common/ico-btn-arrow-w.png");
                     repeat: no-repeat;
                     position: center;
                     size: contain;
@@ -274,7 +259,7 @@ export default {
     }
     .login-btn {
         &:after {
-            background-image: url("@images/common/snb-login-bg-hover.png");
+            //background-image: url("@images/common/snb-login-bg-hover.png");
         }
     }
     .logout-btn {
@@ -313,7 +298,7 @@ export default {
                             margin-left: 1rem;
                             width: 2rem;
                             height: 2rem;
-                            background: no-repeat center url("@images/common/ico-download.png");
+                            //background: no-repeat center url("@images/common/ico-download.png");
                         }
                     }
                 }
