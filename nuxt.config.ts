@@ -2,7 +2,7 @@
 import eslintPlugin from "vite-plugin-eslint"
 export default defineNuxtConfig({
     app: {
-        baseURL: '/thumb/pages/index.vue',
+        baseURL: '/thumb/',
         buildAssetsDir: 'assets',
         cdnURL: process.env.CDN_URL
     },
