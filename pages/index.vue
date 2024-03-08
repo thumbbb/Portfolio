@@ -1,5 +1,6 @@
 <template>
     <NuxtLayout name="default">
+        <!-- <Header /> -->
         <div class="body-container">
             <Snb :class="{ __active: modalStore.layerVisible && modalStore.layerTarget === 'snb' }" />
             <Swiper :modules="[SwiperMousewheel, SwiperFreeMode]" :direction="'vertical'" :mousewheel="true" @swiper="indexStore.onSwiper" @slideChange="indexStore.onSlideChange">

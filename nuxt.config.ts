@@ -3,7 +3,7 @@ import eslintPlugin from "vite-plugin-eslint"
 export default defineNuxtConfig({
     app: {
         head: {
-            title: 'GitHub Pages test',
+            title: 'Hi',
             meta: [
                 { charset: 'utf-8' },
                 { name: 'viewport', content: 'width=device-width, initial-scale=1' },

@@ -29,6 +29,23 @@
     }
 }
 
+@mixin switch-device {
+  &[class$="__pc"] {
+      display: block;
+  }
+  &[class$="__mo"] {
+      display: none;
+  }
+  @include tablet {
+      &[class$="__pc"] {
+          display: none;
+      }
+      &[class$="__mo"] {
+          display: block;
+      }
+  }
+}
+
 .pc-element {
     display: block;
     @include tablet {

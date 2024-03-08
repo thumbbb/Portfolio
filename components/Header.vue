@@ -4,48 +4,17 @@
             <ul>
                 <li class="btn-logo">
                     <a href="#" @click.prevent="indexStore.goToPage(0)">
-                        <img src="@images/common/ico-logo.png" alt="로고" />
+                        <!-- <img src="@images/common/ico-logo.png" alt="로고" /> -->
                     </a>
                 </li>
-                <li class="btn-head-first btn-head">
-                    <button @click.prevent="indexStore.indexAudio()" class="nav-btn">
-                        <img src="@images/common/ico-sound.png" v-if="!indexStore.audioData" alt="소리재생" />
-                        <img src="@images/common/ico-sound-off.png" v-if="indexStore.audioData" alt="소리멈춤" />
-                        <audio id="mainAudio" class="audio-item">
-                            <source src="@images/common/audio/main-bgm.mp3" type="audio/mp3" />
-                        </audio>
-                    </button>
+                <li data-menuanchor="pre-register" class="snb-menu">
+                    <a href="#" :class="{ __active: indexStore.currentPageIndex === 0 }" @click.prevent="[indexStore.goToPage(0), mobileSnbClose()]">화면1</a>
                 </li>
-                <li class="btn-head pc-element">
-                    <a href="https://www.youtube.com/channel/UChDYjUDqiaF4qv8FqmKAXqg" class="nav-btn" target="_blank">
-                        <img src="@images/common/ico-youtube.png" alt="유투브" />
-                    </a>
+                <li data-menuanchor="event" class="snb-menu">
+                    <a href="#" :class="{ __active: indexStore.currentPageIndex === 1 }" @click.prevent="[indexStore.goToPage(1), mobileSnbClose()]">화면2</a>
                 </li>
-                <li class="btn-head pc-element">
-                    <a href="https://twitter.com/ShadowMoG_KR" class="nav-btn" target="_blank">
-                        <img src="@images/common/ico-twitter.png" alt="트위터" />
-                    </a>
-                </li>
-                <li class="btn-head btn-share">
-                    <a
-                        href="#"
-                        @click.prevent="modalStore.layerToggle('share')"
-                        class="nav-btn"
-                        :class="{ __active: modalStore.layerVisible && modalStore.layerTarget === 'share' }"
-                    >
-                        <img src="@images/common/ico-share.png" alt="공유"
-                    /></a>
-                    <Share v-if="modalStore.layerVisible && modalStore.layerTarget === 'share'" :class="{ __active: modalStore.layerVisible }" />
-                </li>
-                <li class="btn-head pc-element">
-                    <a href="https://shadow-garden.webzen.co.kr/" class="nav-btn" target="_blank">
-                        <img src="@images/common/ico-home.png" alt="커뮤니티" />
-                    </a>
-                </li>
-                <li class="btn-head mo-element">
-                    <a href="#" class="nav-btn" @click.prevent="modalStore.layerToggle('snb')">
-                        <img src="@images/common/snb-btn.png" alt="snb 버튼" />
-                    </a>
+                <li data-menuanchor="event-sns" class="snb-menu">
+                    <a href="#" :class="{ __active: indexStore.currentPageIndex === 2 }" @click.prevent="[indexStore.goToPage(2), mobileSnbClose()]">화면3</a>
                 </li>
             </ul>
         </nav>
@@ -63,9 +32,7 @@ export default {
         };
     },
     data() {
-        return {
-            audioToggle: false
-        };
+        return {};
     },
     methods: {}
 };
