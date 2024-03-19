@@ -1,8 +1,10 @@
 {
     "env": {
         "browser": true,
+        "node": true,
         "es2021": true
     },
+    "ignorePatterns": ["node_modules/*", "dist/*", "!.prettierrc.js", "nuxt.config.ts"],
     "extends": [
         "eslint:recommended",
         "plugin:vue/vue3-essential",
@@ -10,12 +12,14 @@
     ],
     "parserOptions": {
         "ecmaVersion": "latest",
-        "sourceType": "module"
+        "sourceType": "module",
+        "project": ["./tsconfig.json"]
     },
     "plugins": [
         "vue", "prettier"
     ],
     "rules": {
+        "prettier/prettier": ["error", {}],
         "vue/multi-word-component-names": ["off"],
         "vue/component-tags-order": [
             "error",

@@ -1,24 +1,23 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 import eslintPlugin from "vite-plugin-eslint"
+
 export default defineNuxtConfig({
+    devtools: { enabled: true },
     app: {
         head: {
-            title: 'Hi',
+            title: "Hi",
             meta: [
-                { charset: 'utf-8' },
-                { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-                { hid: 'description', name: 'description', content: 'test!' },
-                { name: 'format-detection', content: 'telephone=no' }
+                { charset: "utf-8" },
+                { name: "viewport", content: "width=device-width, initial-scale=1" },
+                { property: "name", content: "test!" },
+                { name: "format-detection", content: "telephone=no" }
             ],
-            link: [
-                { rel: 'icon', type: 'image/svg', href: '/favicon.svg' }
-            ]
-        },
-        baseURL: '/thumb/',
-        buildAssetsDir: 'assets',
-        cdnURL: process.env.CDN_URL
+            link: [{ rel: "icon", type: "image/svg", href: "/favicon.svg" }]
+        }
+        // baseURL: "/thumb/",
+        // buildAssetsDir: "assets",
+        // cdnURL: process.env.CDN_URL
     },
-    devtools: { enabled: true },
     modules: ["nuxt-swiper", "@pinia/nuxt"],
     css: ["@/assets/styles/main.scss"],
     alias: {

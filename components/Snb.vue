@@ -6,13 +6,13 @@
         </div>
         <ul class="snb-list">
             <li data-menuanchor="pre-register" class="snb-menu">
-                <a href="#" :class="{ __active: indexStore.currentPageIndex === 0 }" @click.prevent="[indexStore.goToPage(0), mobileSnbClose()]">화면1</a>
+                <a href="#" :class="{ __active: indexStore.currentPageIndex === 0 }" @click.prevent="[indexStore.goToPage(0)]">화면1</a>
             </li>
             <li data-menuanchor="event" class="snb-menu">
-                <a href="#" :class="{ __active: indexStore.currentPageIndex === 1 }" @click.prevent="[indexStore.goToPage(1), mobileSnbClose()]">화면2</a>
+                <a href="#" :class="{ __active: indexStore.currentPageIndex === 1 }" @click.prevent="[indexStore.goToPage(1)]">화면2</a>
             </li>
             <li data-menuanchor="event-sns" class="snb-menu">
-                <a href="#" :class="{ __active: indexStore.currentPageIndex === 2 }" @click.prevent="[indexStore.goToPage(2), mobileSnbClose()]">화면3</a>
+                <a href="#" :class="{ __active: indexStore.currentPageIndex === 2 }" @click.prevent="[indexStore.goToPage(2)]">화면3</a>
             </li>
         </ul>
     </nav>
@@ -29,12 +29,12 @@ export default {
         };
     },
     methods: {
-        mobileSnbClose() {
-            document.getElementById("snb").classList.remove("__active");
-            document.querySelector(".snb-bg").classList.remove("__active");
-            document.getElementById("snb").scrollTo(0, 0);
-            setTimeout(() => this.modalStore.layerToggle(null), 700);
-        }
+        // mobileSnbClose() {
+        //     document.getElementById("snb").classList.remove("__active");
+        //     document.querySelector(".snb-bg").classList.remove("__active");
+        //     document.getElementById("snb").scrollTo(0, 0);
+        //     setTimeout(() => this.modalStore.layerToggle(null), 700);
+        // }
     }
 };
 </script>

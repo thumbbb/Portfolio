@@ -1,13 +1,10 @@
 <template>
     <NuxtLayout name="default">
-        <!-- <Header /> -->
         <div class="body-container">
             <Snb :class="{ __active: modalStore.layerVisible && modalStore.layerTarget === 'snb' }" />
             <Swiper :modules="[SwiperMousewheel, SwiperFreeMode]" :direction="'vertical'" :mousewheel="true" @swiper="indexStore.onSwiper" @slideChange="indexStore.onSlideChange">
                 <SwiperSlide>
                     <button class="store-test" @click="modalStore.layerFlow('layer', 'test')">열려라 참깨라면!</button>
-                    <Share :shareUrl="shareUrl" />
-                    <Share :shareFacebook="shareFacebook" />
                 </SwiperSlide>
                 <SwiperSlide> Swiper 02 </SwiperSlide>
                 <SwiperSlide> Swiper 03 <Footer /></SwiperSlide>
