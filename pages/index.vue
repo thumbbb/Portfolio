@@ -2,12 +2,23 @@
     <NuxtLayout name="default">
         <div class="body-container">
             <Snb :class="{ __active: modalStore.layerVisible && modalStore.layerTarget === 'snb' }" />
-            <Swiper :modules="[SwiperMousewheel, SwiperFreeMode]" :direction="'vertical'" :mousewheel="true" @swiper="indexStore.onSwiper" @slideChange="indexStore.onSlideChange">
+            <Swiper
+                :modules="[SwiperMousewheel, SwiperFreeMode]"
+                :direction="'vertical'"
+                :mousewheel="true"
+                :breakpoints="swiperOption.breakpoints"
+                :freeMode="swiperOption.breakpoints"
+                @swiper="indexStore.onSwiper"
+                @slideChange="indexStore.onSlideChange"
+            >
                 <SwiperSlide>
                     <button class="store-test" @click="modalStore.layerFlow('layer', 'test')">열려라 참깨라면!</button>
                 </SwiperSlide>
-                <SwiperSlide> Swiper 02 </SwiperSlide>
-                <SwiperSlide> Swiper 03 <Footer /></SwiperSlide>
+                <SwiperSlide> INDEX </SwiperSlide>
+                <SwiperSlide> Event </SwiperSlide>
+                <SwiperSlide> Etc. </SwiperSlide>
+                <SwiperSlide> QnA </SwiperSlide>
+                <SwiperSlide class="footer-section"><Footer /></SwiperSlide>
             </Swiper>
         </div>
         <Layer v-if="modalStore.layerVisible && modalStore.layerTarget === 'layer'" :layerType="modalStore.layerType" />
@@ -22,7 +33,36 @@ export default {
     setup() {
         return {
             modalStore: useModalStore(),
-            indexStore: useIndexStore()
+            indexStore: useIndexStore(),
+            swiperOption: {
+                breakpoints: {
+                    1280: {
+                        freeMode: true,
+                        slidesPerView: "auto",
+                        cssMode: "true",
+                        scrollbar: {
+                            hide: false,
+                            draggable: true
+                        }
+                    },
+                    950: {
+                        slidesPerView: "auto",
+                        cssMode: "true",
+                        scrollbar: {
+                            hide: true,
+                            draggable: true
+                        }
+                    },
+                    250: {
+                        slidesPerView: "auto",
+                        cssMode: "true",
+                        scrollbar: {
+                            hide: true,
+                            draggable: true
+                        }
+                    }
+                }
+            }
         };
     },
     data() {
@@ -62,5 +102,10 @@ export default {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    height: 100vh;
+}
+.footer-section {
+    height: 60rem;
 }
 </style>

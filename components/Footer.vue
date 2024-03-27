@@ -1,17 +1,16 @@
 <template>
     <footer class="footer-container">
         <ul class="foot-list">
-            <li><a href="https://privacy.webzen.co.kr/Policy/main/4" target="_blank">이용약관</a></li>
             <li>
-                <a href="https://privacy.webzen.co.kr/Policy/main/2" target="_blank"><strong>개인정보처리방침</strong></a>
+                <h4><i class="fa fa-phone"></i> Call</h4>
+                <a class="mytel" href="tel:010-5317-0059">010-5317-0059</a>
             </li>
-            <li><a href="https://shadow-garden.webzen.co.kr/community-policy" target="_blank">운영정책</a></li>
-            <li><a href="https://company.webzen.com/ko" target="_blank">회사소개</a></li>
+            <li>
+                <h4><i class="fa fa-envelope"></i> Email</h4>
+                <a href="dldjawl89@naver.com">dldjawl89@naver.com</a>
+            </li>
         </ul>
-        <p class="copyright">
-            ©Daisuke Aizawa,KADOKAWA/Shadow Garden<br />
-            ©Master of Garden Project. Published by WEBZEN
-        </p>
+        <p class="copyright">©Copyright Eomji-LEE</p>
     </footer>
 </template>
 
@@ -34,37 +33,34 @@ export default {
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    height: 9rem;
+    height: 60rem;
     padding: 0.5rem 0;
     z-index: 60;
     background-color: #000;
     color: white;
     margin-top: auto;
+    background: url("@images/common/bg_footer.png") 50% 80% no-repeat;
     @include tablet {
         margin-top: 10rem;
         padding-bottom: 8rem;
     }
     .foot-list {
         display: flex;
-        justify-content: space-between;
         align-items: center;
-        grid-gap: 1rem;
+        grid-gap: 3rem;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 3rem;
         > li {
             position: relative;
-            & + li {
-                &:after {
-                    content: "";
-                    width: 0.1rem;
-                    height: 100%;
-                    background-color: #848484;
-                    position: absolute;
-                    top: 0.1rem;
-                    left: -0.5rem;
-                }
+            h4 {
+                display: inline-block;
+                margin-right: 1rem;
             }
             > a {
-                display: block;
-                font-size: 1.4rem;
+                display: inline-block;
+                font-size: 1.7rem;
+                font-weight: bold;
                 color: #d7d7d7;
                 white-space: nowrap;
                 font-family: "Noto Sans KR", sans-serif;

@@ -1,5 +1,5 @@
 <template>
-    <header>
+    <header :class="{ __active: indexStore.currentPageIndex !== 0 }">
         <nav>
             <ul>
                 <li class="btn-logo">
@@ -8,13 +8,19 @@
                     </a>
                 </li>
                 <li data-menuanchor="pre-register" class="snb-menu">
-                    <a href="#" :class="{ __active: indexStore.currentPageIndex === 0 }" @click.prevent="[indexStore.goToPage(0)]">화면1</a>
+                    <a href="#" :class="{ __active: indexStore.currentPageIndex === 0 }" @click.prevent="[indexStore.goToPage(0)]">HOME</a>
                 </li>
                 <li data-menuanchor="event" class="snb-menu">
-                    <a href="#" :class="{ __active: indexStore.currentPageIndex === 1 }" @click.prevent="[indexStore.goToPage(1)]">화면2</a>
+                    <a href="#" :class="{ __active: indexStore.currentPageIndex === 1 }" @click.prevent="[indexStore.goToPage(1)]">INDEX</a>
                 </li>
                 <li data-menuanchor="event-sns" class="snb-menu">
-                    <a href="#" :class="{ __active: indexStore.currentPageIndex === 2 }" @click.prevent="[indexStore.goToPage(2)]">화면3</a>
+                    <a href="#" :class="{ __active: indexStore.currentPageIndex === 2 }" @click.prevent="[indexStore.goToPage(2)]">Event</a>
+                </li>
+                <li data-menuanchor="event-sns" class="snb-menu">
+                    <a href="#" :class="{ __active: indexStore.currentPageIndex === 3 }" @click.prevent="[indexStore.goToPage(3)]">Etc.</a>
+                </li>
+                <li data-menuanchor="event-sns" class="snb-menu">
+                    <a href="#" :class="{ __active: indexStore.currentPageIndex === 4 }" @click.prevent="[indexStore.goToPage(4)]">QnA</a>
                 </li>
             </ul>
         </nav>
@@ -47,7 +53,20 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 11.5rem;
+    height: 9em;
+    background: #0000003d;
+    border: none;
+    transition: 0.5s;
+    &.__active {
+        background-color: #222;
+        height: 7em;
+
+        .snb-menu {
+            > a {
+                line-height: 7rem;
+            }
+        }
+    }
     @include tablet {
         padding: 0;
         height: 8rem;
@@ -69,6 +88,7 @@ header {
     }
     nav {
         width: 100%;
+        height: 100%;
         padding: 0 2rem;
         @include tablet {
             height: 100%;
@@ -78,9 +98,9 @@ header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            @include tablet {
-                height: 100%;
-            }
+            height: 100%;
+            width: 80%;
+            margin-left: auto;
             li {
                 pointer-events: all;
                 text-align: center;
@@ -103,6 +123,18 @@ header {
                     @include tablet {
                         width: 15rem;
                         height: auto;
+                    }
+                }
+                &.snb-menu {
+                    width: calc(100% / 5);
+                    > a {
+                        display: block;
+                        line-height: 9rem;
+                        font-size: 1.5rem;
+                        color: #fff;
+                        &.__active {
+                            color: #ffdf15;
+                        }
                     }
                 }
                 &.btn-head {

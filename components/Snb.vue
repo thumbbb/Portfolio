@@ -41,6 +41,7 @@ export default {
 
 <style lang="scss">
 #snb {
+    display: none;
     position: fixed;
     z-index: 1000;
     width: 17.3rem;
@@ -49,7 +50,7 @@ export default {
     bottom: 0;
     left: 0;
     margin: auto 0;
-    display: flex;
+    // display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
