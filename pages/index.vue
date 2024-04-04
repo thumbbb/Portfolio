@@ -19,7 +19,7 @@
                     <!-- 경력 & 자격증 -->
                     <section class="career">
                         <div class="title-wrap">
-                            <h2>⭐자격증 / 경력⭐</h2>
+                            <h2>⭐CAREER⭐</h2>
                         </div>
                         <div class="career-contents">
                             <h3 class="career-title">학력</h3>
@@ -31,7 +31,7 @@
                             </ul>
                         </div>
                         <div class="career-contents">
-                            <h3 class="career-heading">자격증</h3>
+                            <h3 class="career-title">자격증</h3>
                             <ul>
                                 <li>
                                     GTQ 1급
@@ -87,7 +87,7 @@
                             </ul>
                         </div>
                         <div class="career-contents">
-                            <h3 class="career-heading">경력</h3>
+                            <h3 class="career-title">경력</h3>
                             <ul>
                                 <li>대학교 학회장</li>
                                 <li>
@@ -238,15 +238,17 @@ const closeLicenseLayer = () => {
 
 // 경력
 .career {
-    max-width: 120rem;
-    width: 100%;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     flex-wrap: wrap;
     .title-wrap {
+        margin-bottom: 5rem;
         width: 100%;
         > h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-align: center;
         }
         > p {
         }
@@ -254,13 +256,40 @@ const closeLicenseLayer = () => {
     &-contents {
         width: 33.33%;
         .career-title {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            position: relative;
+            text-align: center;
+            padding-bottom: 1rem;
+            border-bottom: solid 0.1rem #fff;
         }
         > ul {
             > li {
+                list-style: disc;
+                list-style-position: inside;
+                margin-bottom: 0.7rem;
+                line-height: 2.3rem;
+                position: relative;
                 .detail-btn {
-                    position: relative;
+                    color: #535353;
+                    font-size: 1rem;
                 }
                 .license-layer {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    z-index: 999;
+                    max-width: 18rem;
+                    max-height: 25rem;
+                    .close-btn {
+                        position: absolute;
+                        right: 0;
+                        background-color: #afafaf;
+                    }
+                    > img {
+                        width: 100%;
+                    }
                 }
             }
         }
