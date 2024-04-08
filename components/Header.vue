@@ -11,16 +11,22 @@
                     <a href="#" :class="{ __active: indexStore.currentPageIndex === 0 }" @click.prevent="[indexStore.goToPage(0)]">HOME</a>
                 </li>
                 <li data-menuanchor="event" class="snb-menu">
-                    <a href="#" :class="{ __active: indexStore.currentPageIndex === 1 }" @click.prevent="[indexStore.goToPage(1)]">INDEX</a>
+                    <a href="#" :class="{ __active: indexStore.currentPageIndex === 1 }" @click.prevent="[indexStore.goToPage(1)]">Career</a>
                 </li>
                 <li data-menuanchor="event-sns" class="snb-menu">
-                    <a href="#" :class="{ __active: indexStore.currentPageIndex === 2 }" @click.prevent="[indexStore.goToPage(2)]">Event</a>
+                    <a href="#" :class="{ __active: indexStore.currentPageIndex === 2 }" @click.prevent="[indexStore.goToPage(2)]">Language</a>
                 </li>
                 <li data-menuanchor="event-sns" class="snb-menu">
-                    <a href="#" :class="{ __active: indexStore.currentPageIndex === 3 }" @click.prevent="[indexStore.goToPage(3)]">Etc.</a>
+                    <a href="#" :class="{ __active: indexStore.currentPageIndex === 3 }" @click.prevent="[indexStore.goToPage(3)]">작업물</a>
                 </li>
                 <li data-menuanchor="event-sns" class="snb-menu">
-                    <a href="#" :class="{ __active: indexStore.currentPageIndex === 4 }" @click.prevent="[indexStore.goToPage(4)]">QnA</a>
+                    <a href="#" :class="{ __active: indexStore.currentPageIndex === 4 }" @click.prevent="[indexStore.goToPage(4)]">Webzen</a>
+                </li>
+                <li data-menuanchor="event-sns" class="snb-menu">
+                    <a href="#" :class="{ __active: indexStore.currentPageIndex === 5 }" @click.prevent="[indexStore.goToPage(5)]">JIhaksa</a>
+                </li>
+                <li data-menuanchor="event-sns" class="snb-menu">
+                    <a href="#" :class="{ __active: indexStore.currentPageIndex === 6 }" @click.prevent="[indexStore.goToPage(6)]">Withus</a>
                 </li>
             </ul>
         </nav>
