@@ -25,7 +25,13 @@
                             <ul>
                                 <li>1996년 10월 출생</li>
                                 <li>수원여자대학교 졸업 (2019.03~2021.02)</li>
+                                <li>2020.06 ~2020.08 광고콘텐츠(포토샵,일러스트기초활용)제작 </li>
                                 <li>2020.09 ~ 2021.01 웹 디자인 기능사 (HTML5, CSS3, JQ) 취득 및 실무 양성 (B) 과정 수료</li>
+                                <li>2021.11 ~2021.12 엘리스 웹 개발자의 시작! JavaScript 강의 수강</li>
+                                <li>
+                                    - 스파르타 강의 수강 2022.09~ - 앱개발 종합반 50기 (React-native) - zep으로 메타버스 개발 맛보기 - 엑셀보다 쉬운SQL 97기 - 웹개발 종합반
+                                    (Python)
+                                </li>
                                 <li>서울사이버대학교 재학중 (2024.03~)</li>
                             </ul>
                         </div>
@@ -162,20 +168,23 @@
                         </div>
                         <div class="company-contents">
                             <h3 class="contents-title">웹젠</h3>
+                            <a href="#" @click.prevent="[indexStore.goToPage(4)]">보러가기</a>
                             <div class="company-image">
-                                <img src="" alt="" />
+                                <img src="@images/common/webzen_01.png" alt="웹젠" />
                             </div>
                         </div>
                         <div class="company-contents">
                             <h3 class="contents-title">지학사</h3>
+                            <a href="#" @click.prevent="[indexStore.goToPage(5)]">보러가기</a>
                             <div class="company-image">
-                                <img src="" alt="" />
+                                <img src="@images/common/jihaksa_01.png" alt="지학사" />
                             </div>
                         </div>
                         <div class="company-contents">
                             <h3 class="contents-title">위더스아이앤티</h3>
+                            <a href="#" @click.prevent="[indexStore.goToPage(6)]">보러가기</a>
                             <div class="company-image">
-                                <img src="" alt="" />
+                                <img src="@images/common/withus_01.png" alt="위더스아이앤티" />
                             </div>
                         </div>
                     </section>
@@ -187,9 +196,16 @@
                             <h2>웹젠</h2>
                         </div>
                         <div class="company-contents">
-                            <h3 class="contents-title"></h3>
+                            <div class="company-text">
+                                <span class="date">2023.03 ~ 재직중</span>
+                                <p class="info">
+                                    - 런칭 게임 브랜드 페이지 제작 - 사전 예약, 본인 인증 API 연동 및 기능 구현 - Facebook. Twitter 등 SNS OPEN API 연동 - 전체 프로젝트 구성 (Vue3,
+                                    Nuxt) - 전체 페이지 마크업 및 UI 인터렉션 구현 - 인게임 webview 개발 및 유지보수 - 전체 게임 포털 사이트 유지보수 및 이벤트 페이지 개발 -
+                                    이벤트, 사전 예약 구현
+                                </p>
+                            </div>
                             <div class="company-image">
-                                <img src="" alt="" />
+                                <img src="@images/common/webzen_02.png" alt="웹젠 작업물" />
                             </div>
                         </div>
                     </section>
@@ -201,9 +217,12 @@
                             <h2>지학사</h2>
                         </div>
                         <div class="company-contents">
-                            <h3 class="contents-title"></h3>
+                            <div class="company-text">
+                                <span class="date">2022.07 ~ 2023.02</span>
+                                <p class="info">- 검정교과서 사회, 과학 홍보페이지 UI개발 - 교과서 이벤트 페이지 UI개발 - 내부 홈페이지 관리 - 출판 업계의 프로세서 이해도 ↑</p>
+                            </div>
                             <div class="company-image">
-                                <img src="" alt="" />
+                                <img src="@images/common/jihaksa_02.png" alt="지학사 작업물" />
                             </div>
                         </div>
                     </section>
@@ -215,9 +234,12 @@
                             <h2>위더스아이앤티</h2>
                         </div>
                         <div class="company-contents">
-                            <h3 class="contents-title"></h3>
+                            <div class="company-text">
+                                <span class="date">2021.02 ~ 2022.03</span>
+                                <p class="info">- JAVA 언어 개발 MES 프로젝트 참여 - 디자인 및 프론트엔드 개발 - 라벨지 등과 같은 디자인 제작 - 스마트 공장에 대한 이해도 ↑</p>
+                            </div>
                             <div class="company-image">
-                                <img src="" alt="" />
+                                <img src="@images/common/withus_02.png" alt="위더스 작업물" />
                             </div>
                         </div>
                     </section>
