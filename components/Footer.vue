@@ -40,6 +40,7 @@ export default {
     color: white;
     margin-top: auto;
     background: url("@images/common/bg_footer.png") 50% 80% no-repeat;
+    background-size: cover;
     @include tablet {
         margin-top: 10rem;
         padding-bottom: 8rem;

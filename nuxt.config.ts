@@ -12,7 +12,7 @@ export default defineNuxtConfig({
                 { property: "name", content: "test!" },
                 { name: "format-detection", content: "telephone=no" }
             ],
-            link: [{ rel: "icon", type: "image/svg", href: "/favicon.ico" }]
+            link: [{ rel: "icon", type: "image/svg", href: "/favicon.png" }]
         }
         // baseURL: "/thumb/",
         // buildAssetsDir: "assets",
