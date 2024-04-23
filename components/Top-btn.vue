@@ -19,7 +19,7 @@ export default {
 .top-btn {
     position: fixed;
     right: 3%;
-    bottom: 30%;
+    bottom: 20%;
     z-index: 999;
     touch-action: none;
     padding: 0 3rem;
@@ -33,7 +33,7 @@ export default {
         display: block;
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.63);
+        background-color: rgb(205 205 205 / 63%);
         position: absolute;
         left: 0;
         top: 0;
@@ -41,6 +41,7 @@ export default {
         right: 0;
         margin: auto;
         z-index: 20;
+        border-radius: 50%;
     }
     &-txt {
         display: block;
