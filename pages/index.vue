@@ -27,6 +27,25 @@
                     </section>
                 </SwiperSlide>
                 <SwiperSlide>
+                    <div class="container">
+                        <div class="introduce-contents">
+                            <ul class="info">
+                                <li>런칭 게임 브랜드 페이지 제작</li>
+                                <li>사전 예약, 본인 인증 API 연동 및 기능 구현</li>
+                                <li>Facebook. Twitter 등 SNS OPEN API 연동</li>
+                                <li>전체 프로젝트 구성 (Vue3, Nuxt)</li>
+                                <li>전체 페이지 마크업 및 UI 인터렉션 구현</li>
+                                <li>인게임 webview 개발 및 유지보수</li>
+                                <li>전체 게임 포털 사이트 유지보수 및 이벤트 페이지 개발</li>
+                                <li>이벤트, 사전 예약 구현</li>
+                            </ul>
+                            <div class="company-image">
+                                <img src="@images/common/intro_img.jpg" alt="웹젠 작업물" />
+                            </div>
+                        </div>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
                     <!-- 경력 & 자격증 -->
                     <section class="career">
                         <div class="container">
@@ -165,7 +184,7 @@
                     <!-- 경력 작업물  -->
                     <section class="company-list">
                         <div class="container">
-                            <div class="title-wrap">
+                            <div class="title-wrap korean">
                                 <h2>작업물</h2>
                             </div>
                             <div class="company-container">
@@ -198,7 +217,7 @@
                     <!-- 각 회사 작업물  -->
                     <section class="company-info webzen">
                         <div class="container">
-                            <div class="title-wrap">
+                            <div class="title-wrap korean">
                                 <h2>웹젠</h2>
                             </div>
                             <div class="company-contents">
@@ -226,7 +245,7 @@
                     <!-- 각 회사 작업물  -->
                     <section class="company-info jihaksa">
                         <div class="container">
-                            <div class="title-wrap">
+                            <div class="title-wrap korean">
                                 <h2>지학사</h2>
                             </div>
                             <div class="company-contents">
@@ -250,7 +269,7 @@
                     <!-- 각 회사 작업물  -->
                     <section class="company-info withus">
                         <div class="container">
-                            <div class="title-wrap">
+                            <div class="title-wrap korean">
                                 <h2>위더스아이앤티</h2>
                             </div>
                             <div class="company-contents">
@@ -324,6 +343,13 @@ const closeLicenseLayer = () => {
 
 <style lang="scss">
 @import url("https://fonts.googleapis.com/css2?family=Jost:wght@500&family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jersey+15&family=Lilita+One&family=Lobster&display=swap");
+@font-face {
+    font-family: "TTLaundryGothicB";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2403-2@1.0/TTLaundryGothicB.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+}
 
 .body-container {
     width: 100%;
@@ -534,8 +560,8 @@ const closeLicenseLayer = () => {
             background-size: cover;
         }
         &.withus {
-            // background: url("@images/common/withus_02.png") center no-repeat;
-            // background-size: cover;
+            background: url("@images/common/withus-bg.jpg") center no-repeat;
+            background-size: cover;
         }
     }
     div.container {
@@ -551,11 +577,16 @@ const closeLicenseLayer = () => {
             margin-bottom: 5rem;
             width: 100%;
             > h2 {
-                font-size: 2.5rem;
-                font-weight: bold;
+                font-size: 5rem;
+                font-weight: 400;
                 text-align: center;
+                font-family: "Lilita One", sans-serif;
+                font-style: normal;
             }
-            > p {
+            &.korean {
+                > h2 {
+                    font-family: "TTLaundryGothicB";
+                }
             }
         }
         .contents-title {
