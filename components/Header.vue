@@ -11,22 +11,25 @@
                     <a href="#" :class="{ __active: indexStore.currentPageIndex === 0 }" @click.prevent="[indexStore.goToPage(0)]">HOME</a>
                 </li>
                 <li data-menuanchor="event" class="snb-menu">
-                    <a href="#" :class="{ __active: indexStore.currentPageIndex === 1 }" @click.prevent="[indexStore.goToPage(1)]">Career</a>
+                    <a href="#" :class="{ __active: indexStore.currentPageIndex === 1 }" @click.prevent="[indexStore.goToPage(1)]">introduce</a>
                 </li>
                 <li data-menuanchor="event-sns" class="snb-menu">
-                    <a href="#" :class="{ __active: indexStore.currentPageIndex === 2 }" @click.prevent="[indexStore.goToPage(2)]">Language</a>
+                    <a href="#" :class="{ __active: indexStore.currentPageIndex === 2 }" @click.prevent="[indexStore.goToPage(2)]">Career</a>
                 </li>
                 <li data-menuanchor="event-sns" class="snb-menu">
-                    <a href="#" :class="{ __active: indexStore.currentPageIndex === 3 }" @click.prevent="[indexStore.goToPage(3)]">작업물</a>
+                    <a href="#" :class="{ __active: indexStore.currentPageIndex === 3 }" @click.prevent="[indexStore.goToPage(3)]">Language</a>
                 </li>
                 <li data-menuanchor="event-sns" class="snb-menu">
-                    <a href="#" :class="{ __active: indexStore.currentPageIndex === 4 }" @click.prevent="[indexStore.goToPage(4)]">Webzen</a>
+                    <a href="#" :class="{ __active: indexStore.currentPageIndex === 4 }" @click.prevent="[indexStore.goToPage(4)]">작업물</a>
                 </li>
                 <li data-menuanchor="event-sns" class="snb-menu">
-                    <a href="#" :class="{ __active: indexStore.currentPageIndex === 5 }" @click.prevent="[indexStore.goToPage(5)]">JIhaksa</a>
+                    <a href="#" :class="{ __active: indexStore.currentPageIndex === 5 }" @click.prevent="[indexStore.goToPage(5)]">Webzen</a>
                 </li>
                 <li data-menuanchor="event-sns" class="snb-menu">
-                    <a href="#" :class="{ __active: indexStore.currentPageIndex === 6 }" @click.prevent="[indexStore.goToPage(6)]">Withus</a>
+                    <a href="#" :class="{ __active: indexStore.currentPageIndex === 6 }" @click.prevent="[indexStore.goToPage(6)]">Jihaksa</a>
+                </li>
+                <li data-menuanchor="event-sns" class="snb-menu">
+                    <a href="#" :class="{ __active: indexStore.currentPageIndex === 7 }" @click.prevent="[indexStore.goToPage(7)]">Withus</a>
                 </li>
             </ul>
         </nav>
@@ -99,6 +102,11 @@ header {
         @include tablet {
             height: 100%;
             padding: 0 1.5rem;
+            position: fixed;
+            right: 0;
+            top: 0;
+            width: 95%;
+            height: 100%;
         }
         ul {
             display: flex;

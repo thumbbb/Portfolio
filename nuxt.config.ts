@@ -5,7 +5,7 @@ export default defineNuxtConfig({
     devtools: { enabled: true },
     app: {
         head: {
-            title: "Hi",
+            title: "이엄지 포트폴리오",
             meta: [
                 { charset: "utf-8" },
                 { name: "viewport", content: "width=device-width, initial-scale=1" },

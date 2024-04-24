@@ -2,12 +2,8 @@
     <footer class="footer-container">
         <ul class="foot-list">
             <li>
-                <h4><i class="fa fa-phone"></i> Call</h4>
-                <a class="mytel" href="tel:010-5317-0059">010-5317-0059</a>
-            </li>
-            <li>
                 <h4><i class="fa fa-envelope"></i> Email</h4>
-                <a href="dldjawl89@naver.com">dldjawl89@naver.com</a>
+                <a href="mailto:dldjawl89@naver.com">dldjawl89@naver.com</a>
             </li>
         </ul>
         <p class="copyright">©Copyright Eomji-LEE</p>
@@ -41,10 +37,6 @@ export default {
     margin-top: auto;
     background: url("@images/common/bg_footer.png") 50% 80% no-repeat;
     background-size: cover;
-    @include tablet {
-        margin-top: 10rem;
-        padding-bottom: 8rem;
-    }
     .foot-list {
         display: flex;
         align-items: center;
