@@ -30,11 +30,11 @@ export default defineNuxtConfig({
                 },
                 {
                     property: "og:image",
-                    content: process.env.CDN_URL + "share.png"
+                    content: "https://ifh.cc/g/MhYF5p.jpg"
                 },
                 {
                     property: "og:image:secure_url",
-                    content: process.env.CDN_URL + "share.png"
+                    content: "https://ifh.cc/g/MhYF5p.jpg"
                 },
                 {
                     property: "og:image:type",
@@ -62,7 +62,7 @@ export default defineNuxtConfig({
                 },
                 {
                     property: "twitter:image",
-                    content: process.env.CDN_URL + "share.png"
+                    content: "https://ifh.cc/g/MhYF5p.jpg"
                 }
             ],
             link: [{ rel: "icon", type: "image/svg", href: "/favicon.png" }]
