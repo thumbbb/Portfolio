@@ -15,7 +15,6 @@
                 <SwiperSlide>
                     <section class="banner">
                         <div class="container">
-                            <img src="@images/common/share.jpg" alt="쉐어이미지" style="display: none" />
                             <div class="banner-contents">
                                 <p class="banner-title">welcome<br />Eomji<br />Portfolio</p>
                                 <p class="banner-sub-title">
