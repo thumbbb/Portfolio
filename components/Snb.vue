@@ -6,7 +6,6 @@
             </li>
             <li class="snb-menu">
                 <a href="#" :class="{ __active: indexStore.currentPageIndex === 0 }" @click.prevent="[indexStore.goToPage(0), mobileSnbClose()]">HOME</a>
-                z
             </li>
             <li class="snb-menu">
                 <a href="#" :class="{ __active: indexStore.currentPageIndex === 1 }" @click.prevent="[indexStore.goToPage(1), mobileSnbClose()]">introduce</a>
@@ -76,7 +75,12 @@ const mobileSnbClose = () => {
             -webkit-transform: translateX(0);
             transform: translateX(0);
         }
-        ul {
+    }
+    @include mobile {
+        width: 90%;
+    }
+    ul {
+        @include tablet {
             display: flex;
             align-items: center;
             height: 100%;
@@ -87,10 +91,11 @@ const mobileSnbClose = () => {
             margin-left: 0;
             width: 100%;
             position: relative;
-            li {
+        }
+        li {
+            @include tablet {
                 pointer-events: all;
                 text-align: center;
-                margin-right: 0.5rem;
                 &:last-child {
                     margin-right: 0;
                 }
@@ -100,7 +105,9 @@ const mobileSnbClose = () => {
                         width: 100%;
                     }
                 }
-                &.btn-close {
+            }
+            &.btn-close {
+                @include tablet {
                     display: block;
                     width: 3rem;
                     position: absolute;
@@ -111,16 +118,27 @@ const mobileSnbClose = () => {
                         width: 100%;
                     }
                 }
-                &.snb-menu {
-                    width: calc(100% / 5);
-                    > a {
+                @include mobile {
+                    width: 2rem;
+                }
+            }
+            &.snb-menu {
+                @include tablet {
+                    width: 100%;
+                }
+                > a {
+                    @include tablet {
                         display: block;
                         line-height: 9rem;
-                        font-size: 1.5rem;
+                        font-size: 1.7rem;
                         color: #fff;
                         &.__active {
                             color: #ffdf15;
                         }
+                    }
+                    @include mobile {
+                        line-height: 5rem;
+                        font-size: 1.5rem;
                     }
                 }
             }

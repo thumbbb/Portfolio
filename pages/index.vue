@@ -153,8 +153,6 @@
                                     <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=white" />
                                     <img src="https://img.shields.io/badge/Vue.js-4FC08D?style=flat-square&logo=vuedotjs&logoColor=white" />
                                     <img src="https://img.shields.io/badge/Nuxt.js-00DC82?style=flat-square&logo=nuxtdotjs&logoColor=white" />
-                                </div>
-                                <div>
                                     <img src="https://img.shields.io/badge/Prettier-F7B93E?style=flat-square&logo=prettier&logoColor=white" />
                                     <img src="https://img.shields.io/badge/ESLint-4B32C3?style=flat-square&logo=eslint&logoColor=white" />
                                     <img src="https://img.shields.io/badge/Svelte-FF3E00?style=flat-square&logo=svelte&logoColor=white" />
@@ -362,14 +360,6 @@ const closeLicenseLayer = () => {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    .store-test {
-        margin: auto;
-        background-color: #ffdf15;
-        padding: 2rem;
-        color: #393939;
-        font-size: 2rem;
-        border-radius: 3rem;
-    }
 }
 .swiper {
     width: 100%;
@@ -425,10 +415,16 @@ const closeLicenseLayer = () => {
                     font-family: "Permanent Marker", cursive;
                     margin-bottom: 5rem;
                     font-size: 10rem;
+                    @include mobile {
+                        font-size: 5rem;
+                    }
                 }
                 .banner-sub-title {
                     font-size: 2.5rem;
                     line-height: 4rem;
+                    @include mobile {
+                        font-size: 1.7rem;
+                    }
                     .thumb {
                         font-weight: bold;
                         color: #4c8f40;
@@ -463,6 +459,9 @@ const closeLicenseLayer = () => {
                         line-height: 2.5rem;
                         word-break: break-word;
                         padding-right: 3rem;
+                        @include mobile {
+                            font-size: 1.5rem;
+                        }
                         &:last-child {
                             margin: 0;
                         }
@@ -523,6 +522,9 @@ const closeLicenseLayer = () => {
                             margin-bottom: 0.7rem;
                             line-height: 2.3rem;
                             position: relative;
+                            @include mobile {
+                                font-size: 1.5rem;
+                            }
                             .detail-btn {
                                 color: #535353;
                                 font-size: 1rem;
@@ -530,6 +532,9 @@ const closeLicenseLayer = () => {
                             .add-class {
                                 padding-left: 5rem;
                                 font-size: 1.5rem;
+                                @include mobile {
+                                    font-size: 1.3rem;
+                                }
                             }
                             .license-layer {
                                 position: absolute;
@@ -557,9 +562,18 @@ const closeLicenseLayer = () => {
             background-size: cover;
             .language-contents {
                 margin-top: 5rem;
+                width: 50%;
+                @include tablet {
+                    width: 60%;
+                }
+                @include mobile {
+                    width: 80%;
+                }
                 > div {
                     display: flex;
                     justify-content: space-between;
+                    flex-wrap: wrap;
+                    justify-content: center;
                     gap: 1rem;
                     margin-bottom: 1rem;
                 }
@@ -590,6 +604,9 @@ const closeLicenseLayer = () => {
                     @include tablet {
                         flex: unset;
                         width: 50%;
+                    }
+                    @include mobile {
+                        width: 80%;
                     }
                     .contents-title {
                         border-bottom: none;
@@ -640,12 +657,18 @@ const closeLicenseLayer = () => {
                         font-style: italic;
                         color: #7d7d7d;
                         margin-bottom: 2rem;
+                        @include mobile {
+                            font-size: 1.7rem;
+                        }
                     }
                     .info {
                         list-style: disc;
                         list-style-position: inside;
                         > li {
                             margin-bottom: 1rem;
+                            @include mobile {
+                                font-size: 1.5rem;
+                            }
                             &:last-child {
                                 margin: 0;
                             }
@@ -654,6 +677,9 @@ const closeLicenseLayer = () => {
                 }
                 .company-image {
                     flex: 1;
+                    @include mobile {
+                        width: 80%;
+                    }
                     > img {
                         display: block;
                         width: 100%;
@@ -695,6 +721,9 @@ const closeLicenseLayer = () => {
                 text-align: center;
                 font-family: "Lilita One", sans-serif;
                 font-style: normal;
+                @include mobile {
+                    font-size: 3rem;
+                }
             }
             &.korean {
                 > h2 {
@@ -710,6 +739,9 @@ const closeLicenseLayer = () => {
             text-align: center;
             padding-bottom: 1rem;
             border-bottom: solid 0.1rem #fff;
+            @include mobile {
+                font-size: 1.7rem;
+            }
         }
     }
 }
