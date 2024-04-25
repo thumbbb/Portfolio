@@ -1,6 +1,7 @@
 <template>
     <button type="button" class="top-btn" @click="indexStore.goToPage(0)">
         <span class="top-btn-txt">TOP</span>
+        <span class="top-btn-arrow"></span>
     </button>
 </template>
 
@@ -27,6 +28,12 @@ export default {
     @include tablet {
         right: 5%;
         bottom: 28%;
+        @include mobile {
+            bottom: 5%;
+            width: 5rem;
+            height: 5rem;
+            padding: 0;
+        }
     }
     &:after {
         content: "";
@@ -44,7 +51,7 @@ export default {
         border-radius: 50%;
     }
     &-txt {
-        display: block;
+        display: inline-block;
         font-size: 1.5rem;
         color: #fff;
         position: relative;
@@ -52,19 +59,29 @@ export default {
         margin: auto;
         line-height: 4rem;
         text-align: center;
+        @include mobile {
+            display: none;
+        }
+    }
+    &-arrow {
+        display: inline-block;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #fff;
         &:after {
             content: "↑";
             display: inline-block;
-            width: 1.5rem;
-            //height: 1.7rem;
+            width: 1rem;
             margin: 0 0 0.3rem 0.5rem;
             vertical-align: middle;
-            //background: {
-            //    image: url("@images/common/ico-top.png");
-            //    repeat: no-repeat;
-            //    position: center;
-            //    size: contain;
-            //}
+        }
+        @include mobile {
+            font-size: 2rem;
+            &:after {
+                margin: 0;
+                display: block;
+                width: 100%;
+            }
         }
     }
 }
