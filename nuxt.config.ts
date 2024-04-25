@@ -30,11 +30,11 @@ export default defineNuxtConfig({
                 },
                 {
                     property: "og:image",
-                    content: "assets/images/common/share.jpg"
+                    content: "https://i.ibb.co/WBrDDrY/share.jpg"
                 },
                 {
                     property: "og:image:secure_url",
-                    content: "assets/images/common/share.jpg"
+                    content: "https://i.ibb.co/WBrDDrY/share.jpg"
                 },
                 {
                     property: "og:image:type",
@@ -62,7 +62,7 @@ export default defineNuxtConfig({
                 },
                 {
                     property: "twitter:image",
-                    content: "assets/images/common/share.jpg"
+                    content: "https://i.ibb.co/WBrDDrY/share.jpg"
                 }
             ],
             link: [{ rel: "icon", type: "image/svg", href: "/favicon.png" }]
