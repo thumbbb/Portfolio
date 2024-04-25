@@ -30,11 +30,11 @@ export default defineNuxtConfig({
                 },
                 {
                     property: "og:image",
-                    content: "https://ifh.cc/g/MhYF5p.jpg"
+                    content: "assets/images/common/share.jpg"
                 },
                 {
                     property: "og:image:secure_url",
-                    content: "https://ifh.cc/g/MhYF5p.jpg"
+                    content: "assets/images/common/share.jpg"
                 },
                 {
                     property: "og:image:type",
