@@ -459,6 +459,9 @@ const closeLicenseLayer = () => {
                         line-height: 2.5rem;
                         word-break: break-word;
                         padding-right: 3rem;
+                        @include tablet {
+                            padding-right: 0;
+                        }
                         @include mobile {
                             font-size: 1.5rem;
                         }
