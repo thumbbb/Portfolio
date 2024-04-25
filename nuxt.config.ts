@@ -8,9 +8,62 @@ export default defineNuxtConfig({
             title: "이엄지 포트폴리오",
             meta: [
                 { charset: "utf-8" },
-                { name: "viewport", content: "width=device-width, initial-scale=1" },
-                { property: "name", content: "test!" },
-                { name: "format-detection", content: "telephone=no" }
+                {
+                    name: "viewport",
+                    content: "width=device-width, initial-scale=1, user-scalable=yes"
+                },
+                {
+                    property: "name",
+                    content: "이엄지 포트폴리오"
+                },
+                {
+                    property: "og:title",
+                    content: "이엄지 포트폴리오"
+                },
+                {
+                    property: "og:description",
+                    content: "Front-end 개발자 이엄지의 Portfolio"
+                },
+                {
+                    property: "description",
+                    content: "Front-end 개발자 이엄지의 Portfolio"
+                },
+                {
+                    property: "og:image",
+                    content: process.env.CDN_URL + "share.png"
+                },
+                {
+                    property: "og:image:secure_url",
+                    content: process.env.CDN_URL + "share.png"
+                },
+                {
+                    property: "og:image:type",
+                    content: "image/png"
+                },
+                {
+                    property: "og:image:width",
+                    content: "1280"
+                },
+                {
+                    property: "og:image:height",
+                    content: "720"
+                },
+                {
+                    property: "twitter:card",
+                    content: "summary_large_image"
+                },
+                {
+                    property: "twitter:title",
+                    content: "이엄지 포트폴리오"
+                },
+                {
+                    property: "twitter:description",
+                    content: "Front-end 개발자 이엄지의 Portfolio"
+                },
+                {
+                    property: "twitter:image",
+                    content: process.env.CDN_URL + "share.png"
+                }
             ],
             link: [{ rel: "icon", type: "image/svg", href: "/favicon.png" }]
         }
