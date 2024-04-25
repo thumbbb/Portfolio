@@ -88,11 +88,14 @@ header {
                 display: block;
                 width: 5rem;
                 margin-left: auto;
-                margin-right: 2rem;
                 height: 100%;
                 img {
                     width: 100%;
                 }
+            }
+            @include mobile {
+                width: 3rem;
+                margin-right: 0;
             }
         }
         ul {
