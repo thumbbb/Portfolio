@@ -62,7 +62,7 @@ export default defineNuxtConfig({
                 },
                 {
                     property: "twitter:image",
-                    content: "https://ifh.cc/g/MhYF5p.jpg"
+                    content: "assets/images/common/share.jpg"
                 }
             ],
             link: [{ rel: "icon", type: "image/svg", href: "/favicon.png" }]
