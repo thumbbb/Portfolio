@@ -2,6 +2,7 @@
     <NuxtLayout name="default">
         <div class="body-container">
             <Snb :class="{ __active: modalStore.layerVisible && modalStore.layerTarget === 'snb' }" />
+            <div :class="{ __active: modalStore.layerVisible && modalStore.layerTarget === 'snb' }" @click="modalStore.layerToggle(null)" class="snb-bg"></div>
             <Swiper
                 :modules="[SwiperMousewheel, SwiperFreeMode]"
                 :direction="'vertical'"

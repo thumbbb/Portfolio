@@ -1,34 +1,32 @@
 <template>
     <header :class="{ __active: indexStore.currentPageIndex !== 0 }">
         <nav>
+            <button type="button" class="btn-snb" @click.prevent="modalStore.layerToggle('snb')">
+                <img src="@images/common/snb-btn.png" alt="snb menu" />
+            </button>
             <ul>
-                <li class="btn-logo">
-                    <a href="#" @click.prevent="indexStore.goToPage(0)">
-                        <!-- <img src="@images/common/ico-logo.png" alt="로고" /> -->
-                    </a>
-                </li>
-                <li data-menuanchor="pre-register" class="snb-menu">
+                <li class="snb-menu">
                     <a href="#" :class="{ __active: indexStore.currentPageIndex === 0 }" @click.prevent="[indexStore.goToPage(0)]">HOME</a>
                 </li>
-                <li data-menuanchor="event" class="snb-menu">
+                <li class="snb-menu">
                     <a href="#" :class="{ __active: indexStore.currentPageIndex === 1 }" @click.prevent="[indexStore.goToPage(1)]">introduce</a>
                 </li>
-                <li data-menuanchor="event-sns" class="snb-menu">
+                <li class="snb-menu">
                     <a href="#" :class="{ __active: indexStore.currentPageIndex === 2 }" @click.prevent="[indexStore.goToPage(2)]">Career</a>
                 </li>
-                <li data-menuanchor="event-sns" class="snb-menu">
+                <li class="snb-menu">
                     <a href="#" :class="{ __active: indexStore.currentPageIndex === 3 }" @click.prevent="[indexStore.goToPage(3)]">Language</a>
                 </li>
-                <li data-menuanchor="event-sns" class="snb-menu">
+                <li class="snb-menu">
                     <a href="#" :class="{ __active: indexStore.currentPageIndex === 4 }" @click.prevent="[indexStore.goToPage(4)]">작업물</a>
                 </li>
-                <li data-menuanchor="event-sns" class="snb-menu">
+                <li class="snb-menu">
                     <a href="#" :class="{ __active: indexStore.currentPageIndex === 5 }" @click.prevent="[indexStore.goToPage(5)]">Webzen</a>
                 </li>
-                <li data-menuanchor="event-sns" class="snb-menu">
+                <li class="snb-menu">
                     <a href="#" :class="{ __active: indexStore.currentPageIndex === 6 }" @click.prevent="[indexStore.goToPage(6)]">Jihaksa</a>
                 </li>
-                <li data-menuanchor="event-sns" class="snb-menu">
+                <li class="snb-menu">
                     <a href="#" :class="{ __active: indexStore.currentPageIndex === 7 }" @click.prevent="[indexStore.goToPage(7)]">Withus</a>
                 </li>
             </ul>
@@ -53,7 +51,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 header {
     position: fixed;
     top: 0;
@@ -80,33 +78,22 @@ header {
         padding: 0;
         height: 8rem;
     }
-    .btn-snb {
-        display: none;
-        width: 3%;
-        img {
-            width: 100%;
-        }
-        @include tablet {
-            display: block;
-            pointer-events: all;
-            width: 5rem;
-            border-right: solid 0.1rem #373a54;
-            padding: 0 1rem;
-            height: 100%;
-        }
-    }
     nav {
         width: 100%;
         height: 100%;
         padding: 0 2rem;
-        @include tablet {
-            height: 100%;
-            padding: 0 1.5rem;
-            position: fixed;
-            right: 0;
-            top: 0;
-            width: 95%;
-            height: 100%;
+        .btn-snb {
+            display: none;
+            @include tablet {
+                display: block;
+                width: 5rem;
+                margin-left: auto;
+                margin-right: 2rem;
+                height: 100%;
+                img {
+                    width: 100%;
+                }
+            }
         }
         ul {
             display: flex;
@@ -115,6 +102,9 @@ header {
             height: 100%;
             width: 80%;
             margin-left: auto;
+            @include tablet {
+                display: none;
+            }
             li {
                 pointer-events: all;
                 text-align: center;
@@ -122,21 +112,10 @@ header {
                 &:last-child {
                     margin-right: 0;
                 }
-                @include tablet {
-                    margin-right: 0.5rem;
-                }
                 a,
                 button {
                     img {
                         width: 100%;
-                    }
-                }
-                &.btn-logo {
-                    width: 20rem;
-                    height: 6.4rem;
-                    @include tablet {
-                        width: 15rem;
-                        height: auto;
                     }
                 }
                 &.snb-menu {
@@ -148,44 +127,6 @@ header {
                         color: #fff;
                         &.__active {
                             color: #ffdf15;
-                        }
-                    }
-                }
-                &.btn-head {
-                    width: 5.8rem;
-                    height: 5.8rem;
-                    &:hover {
-                        background-color: #c5271c80;
-                    }
-                    @include tablet {
-                        width: 5rem;
-                        height: 5rem;
-                    }
-                    > a,
-                    > button {
-                        display: block;
-                        padding: 1.5rem;
-                        box-sizing: border-box;
-                        border: solid 1px #2d2d2d;
-                        width: 100%;
-                        height: 100%;
-                        @include tablet {
-                            padding: 1rem;
-                        }
-                    }
-                    img {
-                        @include switch-device;
-                    }
-                }
-                &.btn-head-first {
-                    margin-left: auto;
-                }
-                &.btn-share {
-                    position: relative;
-                    > a {
-                        &.__active {
-                            background-color: #c3271c;
-                            border-color: #424242;
                         }
                     }
                 }
