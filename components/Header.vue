@@ -17,7 +17,7 @@
                 <li class="snb-menu">
                     <a href="#" :class="{ __active: indexStore.currentPageIndex === 3 }" @click.prevent="[indexStore.goToPage(3)]">Language</a>
                 </li>
-                <li class="snb-menu">
+                <li class="snb-menu korean">
                     <a href="#" :class="{ __active: indexStore.currentPageIndex === 4 }" @click.prevent="[indexStore.goToPage(4)]">작업물</a>
                 </li>
                 <li class="snb-menu">
@@ -112,6 +112,10 @@ header {
                 pointer-events: all;
                 text-align: center;
                 margin-right: 1rem;
+                font-family: "Permanent Marker", cursive;
+                &.korean {
+                    font-family: "Pretendard", sans-serif;
+                }
                 &:last-child {
                     margin-right: 0;
                 }
