@@ -502,21 +502,39 @@ const closeLicenseLayer = () => {
                 display: flex;
                 align-items: flex-start;
                 gap: 2rem;
+                width: 100%;
                 @include tablet {
                     flex-wrap: wrap;
                     justify-content: center;
                 }
                 .career-contents {
                     flex: 1;
-                    border: solid 0.5rem #fff;
-                    border-radius: 5rem;
+                    border: solid 0.1rem #fff;
+                    border-top: solid 1rem #92c6e9;
+                    border-radius: 0 0 5rem 5rem;
+                    position: relative;
+                    width: 33.33%;
+                    height: 50rem;
+                    &:nth-child(2) {
+                        border-top: solid 1rem #f5db93;
+                    }
+                    &:last-child {
+                        border-top: solid 1rem #eea9a4;
+                    }
                     @include tablet {
                         flex: unset;
                         width: 80%;
+                        height: auto;
                     }
                     .contents-title {
-                        padding: 0;
+                        padding: 0 0 0 3rem;
                         line-height: 5rem;
+                        font-size: 3rem;
+                        border-bottom: none;
+                        text-align: left;
+                        @include tablet {
+                            font-size: 2rem;
+                        }
                     }
                     > ul {
                         padding: 1rem 2rem;
