@@ -40,15 +40,15 @@ export default {
     //         this.modalStore.layerToggle(null);
     //     },
     //     btnShareTw: function () {
-    //         const sendText = "어둠의 실력자가 되고 싶어서! 공식 홈페이지";
-    //         const pageUrl = "https://shadow-garden.webzen.co.kr/brand";
-    //         window.open(`https://twitter.com/intent/tweet?text=${sendText}&url=${pageUrl}`);
+    //         const sendText = "";
+    //         const pageUrl = "h";
+    //         window.open(``);
     //         this.modalStore.layerToggle(null);
     //     },
     //     btnShareFb: function () {
-    //         const sendText = "어둠의 실력자가 되고 싶어서! 공식 홈페이지";
-    //         const pageUrl = "https://shadow-garden.webzen.co.kr/brand";
-    //         window.open(`https://www.facebook.com/sharer/sharer.php?u=${pageUrl}&t=${sendText}`);
+    //         const sendText = "";
+    //         const pageUrl = "";
+    //         window.open(``);
     //         this.modalStore.layerToggle(null);
     //     }
     // }
