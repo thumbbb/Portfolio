@@ -40,6 +40,7 @@
                                         <li>ㆍJAVA와 스프링부트를 사용한 MES 개발 회사에서 정스팜, 보다나, 미래SMT, 한국 테크노팩의 프로젝트를 기초, 고도화까지 제작하였습니다.</li>
                                         <li>ㆍ교과서 출판 업체 지학사에서 홍보페이지 및 이벤트 페이지 유지보수 및 마크업을 맡았습니다.</li>
                                         <li>ㆍ현재 웹젠에서 프론트엔드 개발자로써 UI 개발, 런칭 프로젝트 TF 등을 담당하고 있습니다.</li>
+                                        <li>ㆍ브랜드 사이트 구축과 이벤트 구현, 웹뷰 작업과 운영 업무를 주로 진행하였습니다.</li>
                                         <li>ㆍ업무 뿐만 아니라 새로운 기술과 언어를 학습하고 도전하는 것에 흥미를 느낍니다.</li>
                                         <li>ㆍ성능의 최적화를 위해 고민하고 언제나 사용자 입장에서 생각합니다.</li>
                                     </ul>
@@ -79,6 +80,7 @@
                                 <div class="career-contents">
                                     <h3 class="contents-title">자격증</h3>
                                     <ul>
+                                        <li>웹디자인 기능사</li>
                                         <li>
                                             GTQ 1급
                                             <button type="button" class="detail-btn" @click="licenseLayer('1')">자세히보기</button>
@@ -87,16 +89,6 @@
                                                     <img src="@images/common/ico-close.png" alt="" />
                                                 </button>
                                                 <img src="@images/main/license_04.jpg" alt="" />
-                                            </div>
-                                        </li>
-                                        <li>
-                                            자동차 운전면허증 2종보통
-                                            <button type="button" class="detail-btn" @click="licenseLayer('2')">자세히보기</button>
-                                            <div class="license-layer" v-if="licenseInfo === '2'">
-                                                <button class="close-btn" @click="closeLicenseLayer()">
-                                                    <img src="@images/common/ico-close.png" alt="" />
-                                                </button>
-                                                <img src="@images/main/license_05.jpg" alt="" />
                                             </div>
                                         </li>
                                         <li>
@@ -109,7 +101,6 @@
                                                 <img src="@images/main/license_01.jpg" alt="" />
                                             </div>
                                         </li>
-                                        <li>웹디자인 기능사</li>
                                     </ul>
                                 </div>
                                 <div class="career-contents">
